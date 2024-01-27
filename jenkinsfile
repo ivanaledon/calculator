@@ -18,14 +18,10 @@ pipeline {
         stage('Creación del entorno virtual') {
             steps {
                 echo 'Construyendo la aplicación...'
-                sh 'python3 -m venv venv' // Crea un entorno virtual
-                sh '. venv/bin/activate' // Activa el entorno virtual
-                sh 'pip install --break-system-packages -r requirements.txt' // Instala dependencias en el entorno virtual
             }
         }
         stage('Despliegue del código') {
             steps {
-                // Simular un despliegue
                 echo 'Desplegando la aplicación...'
             }
         }
