@@ -1,4 +1,4 @@
-# Test Unitario
+# Tests Unitarios
 import unittest
 from calculadora import sumar, restar, multiplicar, dividir
 
