@@ -6,21 +6,21 @@ pipeline {
             steps {
                 // Cambia la URL a la de tu repositorio y especifica la rama principal
                 git branch: 'main',
-                    url: 'https://github.com/CyberMarcosPPS/CalculadoraPython.git'
+                    url: 'https://github.com/ivanaledon/CalculadoraPython.git'
             }
         }
-        stage('Realización de las pruebas unitarias') {
+        stage('pruebas unitarias') {
             steps {
                 // Ejecución de las pruebas unitarias
                 sh 'python3 -m unittest unitaryTestCalculadora.py'
             }
         }
-        stage('Creación del entorno virtual') {
+        stage('entorno virtual') {
             steps {
                 echo 'Construyendo la aplicación...'
             }
         }
-        stage('Despliegue del código') {
+        stage('Despliegue') {
             steps {
                 echo 'Desplegando la aplicación...'
             }
