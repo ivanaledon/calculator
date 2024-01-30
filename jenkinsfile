@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // Cambia la URL a la de tu repositorio y especifica la rama principal
                 git branch: 'main',
-                    url: 'https://github.com/ivanaledon/CalculadoraPython.git'
+                    url: 'https://github.com/ivanaledon/calculator.git'
             }
         }
         stage('pruebas unitarias') {
